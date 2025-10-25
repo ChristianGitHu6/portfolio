@@ -1,0 +1,19 @@
+<section id="accessibility" class="accessibility-section">
+  <div class="container">
+    <h2 class="section-title" appScrollAnimation [animationType]="'slide-in-up'">Accessibility Solutions</h2>
+    <p class="section-subtitle" appScrollAnimation [animationType]="'slide-in-up'" [animationDelay]="100">
+      Providing inclusive web solutions following WCAG 2.2 AA standards for users who need accessibility support
+    </p>
+
+    <div class="accessibility-grid">
+      <div class="accessibility-card" *ngFor="let feature of accessibilityFeatures; let i = index"
+           appScrollAnimation
+           [animationType]="'slide-in-up'"
+           [animationDelay]="200 + (i * 100)">
+        <div class="icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
