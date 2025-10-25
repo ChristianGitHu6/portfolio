@@ -16,11 +16,14 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="code-window">
+      <div class="code-window" [class.light-theme]="codeTheme === 'light'">
         <div class="window-header">
           <span class="dot red"></span>
           <span class="dot yellow"></span>
           <span class="dot green"></span>
+          <button class="theme-toggle" (click)="toggleCodeTheme()" [title]="codeTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'">
+            <span class="theme-icon">{{ codeTheme === 'dark' ? '☀️' : '🌙' }}</span>
+          </button>
         </div>
         <div class="window-content">
           <pre><code><span class="keyword">const</span> developer = &#123;

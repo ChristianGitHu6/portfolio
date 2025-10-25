@@ -208,6 +208,33 @@
             background: #27c93f;
           }
         }
+
+        .theme-toggle {
+          margin-left: auto;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          padding: 4px 8px;
+          border-radius: 6px;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+
+          .theme-icon {
+            font-size: 1.2rem;
+            display: block;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover .theme-icon {
+            transform: rotate(20deg) scale(1.1);
+          }
+        }
       }
 
       .window-content {
@@ -215,24 +242,66 @@
         font-family: 'Courier New', monospace;
         font-size: 0.95rem;
         line-height: 1.6;
+        transition: background-color 0.3s ease;
 
         code {
           color: #d4d4d4;
 
           .keyword {
             color: #569cd6;
+            transition: color 0.3s ease;
           }
 
           .property {
             color: #9cdcfe;
+            transition: color 0.3s ease;
           }
 
           .string {
             color: #ce9178;
+            transition: color 0.3s ease;
           }
 
           .number {
             color: #b5cea8;
+            transition: color 0.3s ease;
+          }
+        }
+      }
+
+      // Light theme styles
+      &.light-theme {
+        background: #ffffff;
+
+        .window-header {
+          background: #e8e8e8;
+
+          .theme-toggle:hover {
+            background: rgba(0, 0, 0, 0.05);
+          }
+        }
+
+        .window-content {
+          background: #ffffff;
+
+          code {
+            color: #24292e;
+
+            .keyword {
+              color: #d73a49;
+            }
+
+            .property {
+              color: #005cc5;
+            }
+
+            .string {
+              color: #22863a;
+            }
+
+            .number {
+              color: #005cc5;
+            }
           }
         }
       }

@@ -23,6 +23,7 @@ export class HeroComponent implements OnInit, OnDestroy {
   pauseAfterComplete: number = 2000;
   pauseAfterDelete: number = 500;
   private timeoutId: any;
+  codeTheme: 'dark' | 'light' = 'dark';
 
   ngOnInit() {
     this.typeText();
@@ -32,6 +33,10 @@ export class HeroComponent implements OnInit, OnDestroy {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }
+  }
+
+  toggleCodeTheme() {
+    this.codeTheme = this.codeTheme === 'dark' ? 'light' : 'dark';
   }
 
   private typeText() {
