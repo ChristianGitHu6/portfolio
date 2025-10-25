@@ -1,0 +1,19 @@
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title" appScrollAnimation animationType="fade-in">What I Can Build For You</h2>
+
+    <div class="services-grid">
+      @for (service of services; track service.title; let i = $index) {
+        <div
+          class="service-card"
+          appScrollAnimation
+          animationType="slide-in-up"
+          [animationDelay]="i * 100">
+          <div class="service-icon">{{ service.icon }}</div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-description">{{ service.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

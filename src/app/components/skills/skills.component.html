@@ -1,0 +1,11 @@
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title" appScrollAnimation animationType="fade-in">Tech Stack</h2>
+
+    <div class="skills-simple" appScrollAnimation animationType="fade-in" [animationDelay]="100">
+      @for (skill of mainSkills; track skill) {
+        <span class="skill-badge">{{ skill }}</span>
+      }
+    </div>
+  </div>
+</section>
