@@ -10,6 +10,10 @@
   overflow: hidden;
   padding: 25px 20px;
 
+  @media (max-width: 768px) {
+    min-height: calc(100vh);
+  }
+
   // Animated background particles
   &::before {
     content: '';
@@ -56,18 +60,18 @@
     animation: fadeInLeft 1s ease-out;
 
     .greeting {
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: 400;
       margin-bottom: 10px;
       opacity: 0.9;
 
       @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 24px;
       }
     }
 
     .name {
-      font-size: 4rem;
+      font-size: 64px;
       font-weight: 700;
       margin-bottom: 20px;
       line-height: 1.2;
@@ -77,12 +81,12 @@
       background-clip: text;
 
       @media (max-width: 768px) {
-        font-size: 2.5rem;
+        font-size: 40px;
       }
     }
 
     .typing-container {
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: 600;
       margin-bottom: 30px;
       min-height: 60px;
@@ -94,7 +98,7 @@
       }
 
       @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 24px;
         min-height: 45px;
       }
 
@@ -111,13 +115,13 @@
     }
 
     .tagline {
-      font-size: 1.2rem;
+      font-size: 19px;
       margin-bottom: 40px;
       opacity: 0.9;
       line-height: 1.6;
 
       @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 16px;
       }
     }
 
@@ -135,7 +139,7 @@
         border-radius: 50px;
         text-decoration: none;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 16px;
         transition: all 0.3s ease;
         display: inline-block;
 
@@ -226,7 +230,7 @@
           }
 
           .theme-icon {
-            font-size: 1.2rem;
+            font-size: 19px;
             display: block;
             transition: transform 0.3s ease;
           }
@@ -240,7 +244,7 @@
       .window-content {
         padding: 24px;
         font-family: 'Courier New', monospace;
-        font-size: 0.95rem;
+        font-size: 15px;
         line-height: 1.6;
         transition: background-color 0.3s ease;
 

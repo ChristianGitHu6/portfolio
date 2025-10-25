@@ -5,7 +5,7 @@
 
   .section-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 60px;
     letter-spacing: 1px;
@@ -15,7 +15,7 @@
     background-clip: text;
 
     @media (max-width: 768px) {
-      font-size: 2.2rem;
+      font-size: 35px;
       margin-bottom: 40px;
     }
   }
@@ -29,14 +29,14 @@
     text-align: center;
 
     h3 {
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: 700;
       margin-bottom: 20px;
       color: #1a202c;
     }
 
     .contact-description {
-      font-size: 1.1rem;
+      font-size: 18px;
       line-height: 1.8;
       margin-bottom: 40px;
       color: #4a5568;
@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         gap: 15px;
-        font-size: 1.1rem;
+        font-size: 18px;
         transition: transform 0.3s ease;
 
         &:hover {
@@ -60,7 +60,7 @@
         }
 
         .icon {
-          font-size: 1.5rem;
+          font-size: 24px;
           color: #667eea;
         }
 
